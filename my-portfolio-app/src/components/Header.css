@@ -2,7 +2,7 @@
 header {
     font-family: 'Rubik', sans-serif; /* Встановлюємо шрифт Rubik */
     background-color: #fff; /* Білий фон */
-    padding: 15px 20px; /* Внутрішні відступи */
+    padding: 15px 30px; /* Внутрішні відступи */
     display: flex; /* Включаємо гнучке вирівнювання (flexbox) */
     align-items: center; /* Вирівнюємо елементи по центру вертикально */
     justify-content: space-between; /* Розташовуємо контент по краях (логотип ліворуч, меню по центру, кнопки праворуч) */
@@ -31,7 +31,7 @@ nav {
 nav ul {
     list-style: none; /* Видаляємо маркери списку */
     display: flex; /* Розміщуємо пункти горизонтально */
-    gap: 20px; /* Відстань між пунктами */
+    gap: 25px; /* Відстань між пунктами */
     padding: 0; /* Видаляємо внутрішні відступи */
 }
 
@@ -47,21 +47,62 @@ nav ul li a:hover {
     color: #ff4500; /* Колір помаранчевий */
 }
 
-/* Контейнер для кнопок "Sign In" та "Sign Up" */
+/* Контейнер для логотипу та назви */
+.logo-container {
+    display: flex;
+    align-items: center; /* Вирівнюємо логотип і текст по центру */
+    gap: 10px; /* Відступ між логотипом і текстом */
+}
+
+/* Стиль для логотипу */
+.logo {
+    width: 40px; /* Розмір логотипу (змінюйте за потреби) */
+    height: auto; /* Автоматичне коригування висоти */
+}
+
 .auth-links {
-    display: flex; /* Використовуємо flexbox */
-    gap: 15px; /* Відстань між кнопками */
+    display: flex;
+    align-items: center; /* Вирівнюємо кнопки по центру */
+    gap: 20px; /* Відстань між кнопками */
 }
-
-/* Стиль для кнопок "Sign In" і "Sign Up" */
-.auth-links a {
+/* Стилізація "Sign In" */
+.sign-in {
+    font-family: 'Rubik', sans-serif; /* Встановлюємо шрифт Rubik */
+    font-size: 16px; /* Розмір шрифту */
+    font-weight: 700; /* Робимо текст жирним */
+    color: #141414; /* Чорний колір */
+    background: none; /* Без заливки фону */
+    border: none; /* Без обводки */
     text-decoration: none; /* Видаляємо підкреслення */
-    color: #555; /* Сірий колір тексту */
-    font-weight: 500; /* Напівжирний текст */
-    transition: color 0.3s ease; /* Плавна зміна кольору */
+    display: inline-block; /* Дозволяє застосовувати margin та padding */
+    cursor: pointer; /* Змінюємо курсор на "вказівник" */
 }
 
-/* Зміна кольору при наведенні на "Sign In" або "Sign Up" */
-.auth-links a:hover {
-    color: #ff4500; /* Колір змінюється на помаранчевий */
+
+
+
+
+/* Стилізація кнопки "Sign Up" */
+.sign-up-btn {
+    font-family: 'Rubik', sans-serif; /* Встановлюємо шрифт Rubik */
+    font-size: 16px; /* Розмір шрифту */
+    font-weight: 600; /* Напівжирний текст */
+    color: #F53838; /* Червоний текст */
+    background-color: transparent; /* Прозорий фон */
+    border: 2px solid #F53838; /* Червона рамка */
+    padding: 8px 28px; /* Внутрішній відступ (збільшує кнопку) */
+    border-radius: 25px; /* Заокруглені краї */
+    text-decoration: none; /* Видаляємо підкреслення */
+    transition: all 0.3s ease; /* Плавні зміни при наведенні */
+}
+
+/* Ефект при наведенні */
+.sign-up-btn:hover {
+    background-color: #F53838; /* Фон стає червоним */
+    color: white; /* Текст стає білим */
+}
+
+/* Ефект при натисканні */
+.sign-up-btn:active {
+    transform: scale(0.95); /* Легке зменшення кнопки при натисканні */
 }

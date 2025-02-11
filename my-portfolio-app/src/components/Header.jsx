@@ -5,7 +5,10 @@ import "./Header.css";
 function Header() {
   return (
     <header>
-      <h1>Lasles<span className="bold">VPN</span></h1> {/* "VPN" жирний, "Lasles" звичайний */}
+      <div className="logo-container">
+        <img src="/logo.png" alt="LaslesVPN Logo" className="logo" />
+        <h1>Lasles<span className="bold">VPN</span></h1>
+      </div>
       <nav>
         <ul>
           <li><Link to="/">About</Link></li>
@@ -16,8 +19,8 @@ function Header() {
         </ul>
       </nav>
       <div className="auth-links">
-        <Link to="sign_in">Sign In</Link>
-        <Link to="sign_up">Sign Up</Link>
+        <button className="sign-in">Sign In</button>
+        <button className="sign-up-btn">Sign Up</button>
       </div>
     </header>
   );
