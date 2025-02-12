@@ -1,59 +1,138 @@
 /* Основна стилізація для компонента Home */
-main {
-    display: flex; /* Використовуємо flexbox для розташування елементів по горизонталі */
-    justify-content: space-between; /* Розподіляє елементи по всій ширині, створюючи простір між ними */
-    align-items: center; /* Центрує елементи по вертикалі */
-    padding: 65px; /* Встановлюємо відступи з усіх боків */
+.home-container {
+  display: flex;
+  flex-direction: column; /* Встановлюємо вертикальне розташування для контейнера */
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+}
+
+/* Контейнер для тексту та зображення */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1px;
+}
+
+/* Текстова частина */
+.text-container {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.75;
+  color: #433838;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.get-started {
+  font-family: 'Rubik', sans-serif;
+  display: block;
+  width: 200px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #F53838;
+  color: white;
+  border: 2px solid #F53838;
+  border-radius: 5px;
+  margin: 0;
+  box-shadow: 0 4px 10px rgba(230, 18, 18, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.get-started:hover {
+  background-color: #D02A2A;
+}
+
+/* Зображення */
+.image-first-page {
+  max-width: 45%;
+  height: auto;
+}
+
+/* Стилізація статистики */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 0.1px;
+  margin-top: 90px;
+  width: 95%;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Вирівнюємо статистику по ширині */
+}
+
+.stat {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+.icon {
+  background-color: rgba(245, 56, 56, 0.1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Вертикальні роздільники */
+.divider {
+  width: 1px;
+  height: 100px;
+  background-color: #e2e1e1;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Мобільний вигляд з колонкою */
+    align-items: center;
+    text-align: center;
   }
-  
-  /* Контейнер для тексту, щоб обмежити ширину */
+
   .text-container {
-    max-width: 50%; /* Максимальна ширина контейнера з текстом 50% */
+    max-width: 100%; /* Дозволяємо тексту займати всю ширину */
   }
-  
-  /* Стилізація заголовка */
-  h2 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 55px; /* Розмір шрифту заголовка */
-    font-weight: 600; /* Жирний шрифт для заголовка */
-    margin-bottom: 10px; /* Відступ знизу від заголовка до наступного елемента */
-  }
-  
-  /* Стилізація абзацу */
-  p {
-    font-family: 'Rubik', sans-serif;
-    line-height: 1.75;
-    color: #433838;
-    font-size: 18px; /* Розмір шрифту тексту */
-    margin-bottom: 35px; /* Відступ знизу між текстом і кнопкою */
-  }
-  
-  /* Стилізація кнопки */
-  .get-started {
-    font-family: 'Rubik', sans-serif;
-    display: block;
-    width: 200px;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    background-color: #F53838;
-    color: white;
-    border: 2px solid #F53838; /* Постійна обводка */
-    border-radius: 5px;
-    margin:0;
-    box-shadow: 0 4px 10px rgba(230, 18, 18, 3); /* Постійна тінь */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Плавний перехід */
-  }
-  
-  
-  /* Стилізація кнопки при наведенні */
-  .get-started:hover {
-    background-color: #D02A2A; /* Темніший червоний колір кнопки при наведенні */
-  }
-  
-  /* Стилізація зображення */
+
   .image-first-page {
-    max-width: 45%; /* Максимальна ширина зображення 45% */
-    height: auto; /* Автоматичне збереження пропорцій зображення */
+    max-width: 80%;
+    margin-top: 20px;
   }
+
+  .stats {
+    flex-direction: column; /* Статистика йде вертикально */
+    gap: 20px;
+    align-items: center;
+  }
+
+  .divider {
+    width: 50px;
+    height: 1px;
+  }
+}
+
+
+

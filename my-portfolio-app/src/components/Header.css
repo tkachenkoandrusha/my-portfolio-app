@@ -2,7 +2,7 @@
 header {
     font-family: 'Rubik', sans-serif; /* Встановлюємо шрифт Rubik */
     background-color: #fff; /* Білий фон */
-    padding: 15px 30px; /* Внутрішні відступи */
+    padding: 15px 65px; /* Внутрішні відступи */
     display: flex; /* Включаємо гнучке вирівнювання (flexbox) */
     align-items: center; /* Вирівнюємо елементи по центру вертикально */
     justify-content: space-between; /* Розташовуємо контент по краях (логотип ліворуч, меню по центру, кнопки праворуч) */
@@ -105,4 +105,35 @@ nav ul li a:hover {
 /* Ефект при натисканні */
 .sign-up-btn:active {
     transform: scale(0.95); /* Легке зменшення кнопки при натисканні */
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Перетворюємо хедер у вертикальний */
+        align-items: center; /* Центруємо елементи */
+        padding: 10px 15px; /* Зменшуємо внутрішні відступи */
+    }
+
+    .logo-container {
+        justify-content: center; /* Центруємо логотип */
+    }
+
+    nav {
+        flex-direction: column; /* Навігація у вертикальний список */
+        align-items: center; /* Центруємо */
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Перетворюємо меню у стовпчик */
+        gap: 15px; /* Збільшуємо відстань між пунктами */
+    }
+
+    .auth-links {
+        flex-direction: column; /* Кнопки входу у стовпчик */
+        gap: 10px; /* Додаємо відступ між кнопками */
+        margin-top: 10px;
+    }
 }
