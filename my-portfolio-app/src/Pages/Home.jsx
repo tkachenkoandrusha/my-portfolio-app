@@ -31,6 +31,23 @@ function Home() {
           <p>Servers</p>
         </div>
       </div>
+      <section className='features-container'>
+        <img src='/features-image.png' alt="Features" className="features-image" />
+        <div className='features-text'>
+          <h2>We Provide Many <br /> Features You Can Use</h2>
+          <p>You can explore the features that we provide with fun and have their own functions each feature.</p>
+          <ul className='features-list'>
+            <li>Powerful online protection.</li>
+            <li>Internet without borders.</li>
+            <li>Supercharged VPN.</li>
+            <li>No specific time limits.</li>
+          </ul>
+        </div>
+        <div className='text-container-prise'>
+          <h2>Choose Your Plan</h2>
+          <p>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+        </div>
+      </section>
     </main>
   );
 }

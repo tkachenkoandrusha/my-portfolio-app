@@ -4,7 +4,7 @@
   flex-direction: column; /* Встановлюємо вертикальне розташування для контейнера */
   justify-content: center;
   align-items: center;
-  padding: 70px;
+  padding: 25px;
 }
 
 /* Контейнер для тексту та зображення */
@@ -35,7 +35,7 @@ p {
   font-family: 'Rubik', sans-serif;
   line-height: 1.75;
   color: #433838;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 35px;
 }
 
@@ -134,5 +134,114 @@ p {
   }
 }
 
+/* Стилізація для features-container */
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1px;
+  flex-wrap: wrap; /* Дозволяє елементам переноситись на новий рядок, якщо необхідно */
+}
 
+.features-image {
+  max-width: 45%;
+  height: auto;
+}
 
+.features-text {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.features-text h2 {
+  font-size: 33px;
+  font-weight: 600;
+  color: #141414;
+  margin-bottom: 15px;
+}
+
+.features-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Список йде стовпцем */
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 45px; /* Відступ для маркера */
+}
+
+/* Кастомний маркер у вигляді зеленого кола з галочкою */
+.features-list li::before {
+  content: "✔"; /* Галочка */
+  font-size: 12px;
+  color: white;
+  background-color: #4CAF50; /* Зелений фон */
+  border-radius: 50%; /* Робимо його круглим */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+}
+
+/* Стилізація для text-container-prise */
+.text-container-prise {
+  margin-top: 30px; /* Відстань від попереднього контенту */
+  padding: 0%;
+  text-align: center;
+  display: block;
+  width: 50%; /* Ширина контейнера (можна змінити відповідно до вашого дизайну) */
+  margin: 90px auto 0; /* Центрування контейнера і збільшення відступу зверху */
+  box-sizing: border-box; /* Щоб padding не впливав на загальну ширину */
+}
+
+.text-container-prise h2{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 650;
+  margin: 0;
+  font-size: 33px;  
+}
+.text-container-prise p{
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px; 
+  color: #666666;
+}
+/* Адаптивність */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column; /* На маленьких екранах елементи йдуть один під одним */
+    text-align: center;
+  }
+
+  .features-image {
+    max-width: 80%;
+  }
+
+  .features-text {
+    max-width: 100%;
+  }
+
+  .features-list li {
+    justify-content: center;
+  }
+}
