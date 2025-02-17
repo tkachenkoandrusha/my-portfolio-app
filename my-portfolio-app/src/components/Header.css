@@ -107,33 +107,45 @@ nav ul li a:hover {
     transform: scale(0.95); /* Легке зменшення кнопки при натисканні */
 }
 
+/* Стиль для кнопки меню (гамбургер) */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
 
+/* Адаптивне меню */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Перетворюємо хедер у вертикальний */
-        align-items: center; /* Центруємо елементи */
-        padding: 10px 15px; /* Зменшуємо внутрішні відступи */
+    .menu-toggle {
+        display: block; /* Показуємо кнопку на мобільних */
     }
 
-    .logo-container {
-        justify-content: center; /* Центруємо логотип */
-    }
-
-    nav {
-        flex-direction: column; /* Навігація у вертикальний список */
-        align-items: center; /* Центруємо */
+    .nav-menu {
+        display: none; /* Ховаємо меню за замовчуванням */
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
         width: 100%;
-        margin-top: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
     }
 
-    nav ul {
-        flex-direction: column; /* Перетворюємо меню у стовпчик */
-        gap: 15px; /* Збільшуємо відстань між пунктами */
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu.show {
+        display: flex; /* Показуємо меню при активному стані */
     }
 
     .auth-links {
-        flex-direction: column; /* Кнопки входу у стовпчик */
-        gap: 10px; /* Додаємо відступ між кнопками */
-        margin-top: 10px;
+        flex-direction: column;
     }
 }

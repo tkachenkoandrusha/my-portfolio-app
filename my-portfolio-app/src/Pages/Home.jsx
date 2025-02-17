@@ -43,11 +43,11 @@ function Home() {
             <li>No specific time limits.</li>
           </ul>
         </div>
-        <div className='text-container-prise'>
-          <h2>Choose Your Plan</h2>
-          <p>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
-        </div>
       </section>
+      <div className='text-container-prise'>
+        <h2>Choose Your Plan</h2>
+        <p>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+      </div>
     </main>
   );
 }
