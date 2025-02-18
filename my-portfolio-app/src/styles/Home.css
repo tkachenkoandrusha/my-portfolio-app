@@ -137,7 +137,7 @@ h2 {
 
 /* Стилізація для features-container */
 .features-container {
-  padding: 70px;
+  padding: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,7 +147,7 @@ h2 {
 }
 
 .features-image {
-  max-width: 45%;
+  max-width: 35%;
   height: auto;
 }
 
@@ -338,7 +338,7 @@ h2 {
 
 .vpn-section h2 {
   font-family: 'Rubik', sans-serif;
-  font-size: px;
+  font-size: 45px;
   margin-bottom: 30px;
 }
 
@@ -351,5 +351,17 @@ h2 {
 
 .globalimage {
   max-width: 80%;
+  height: auto;
+}
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 50px;
+}
+
+.logobr {
+  max-width: 200px;
   height: auto;
 }

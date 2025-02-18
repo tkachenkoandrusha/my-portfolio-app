@@ -112,6 +112,13 @@ function Home() {
         <p>See LaslesVPN everywhere to make it easier for you when you move locations.</p>
         <img src="/global.png" alt="glob" className="globalimage" />
       </section>
+      <div class="brand-logos">
+        <img src="/netflix.png" alt="Netflix" class="logobr" />
+        <img src="/reddit.png" alt="Reddit" class="logobr" />
+        <img src="/amazon.png" alt="Amazon" class="logobr" />
+        <img src="/discord.png" alt="Discord" class="logobr" />
+        <img src="/spotify.png" alt="Spotify" class="logobr" />
+      </div>
     </main>
   );
 }
