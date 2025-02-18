@@ -4,7 +4,7 @@
   flex-direction: column; /* Встановлюємо вертикальне розташування для контейнера */
   justify-content: center;
   align-items: center;
-  padding: 120px;
+  padding: 100px;
 }
 
 /* Контейнер для тексту та зображення */
@@ -326,4 +326,30 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
+}
+.vpn-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.vpn-section h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: px;
+  margin-bottom: 30px;
+}
+
+.vpn-section p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 200px;
+}
+
+.globalimage {
+  max-width: 80%;
+  height: auto;
 }
