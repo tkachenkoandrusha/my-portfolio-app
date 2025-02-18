@@ -346,22 +346,50 @@ h2 {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   color: #666;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .globalimage {
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
 }
+
 .brand-logos {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
-  margin-top: 50px;
+  flex-wrap: wrap; /* Дозволяє логотипам переноситися на новий рядок */
+  gap: 5vw; /* Використання відсотків для гнучкого відступу */
+  margin-top: 5vh;
 }
 
 .logobr {
-  max-width: 200px;
+  max-width: 12vw; /* Використовуємо відсотки, щоб підлаштовуватись під розмір екрану */
   height: auto;
+}
+
+/* Медізапити для дрібніших екранів */
+@media (max-width: 1024px) {
+  .logobr {
+    max-width: 20vw; /* Трохи більші логотипи на менших екранах */
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-logos {
+    gap: 4vw;
+  }
+  .logobr {
+    max-width: 25vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logos {
+    flex-direction: column; /* В стовпчик для мобільних */
+    gap: 20px;
+  }
+  .logobr {
+    max-width: 50%;
+  }
 }
