@@ -420,3 +420,104 @@ h2 {
   max-width: 800px; /* Обмеження ширини для кращого вигляду */
   margin-bottom: 80px;
 }
+
+/* Основні стилі для контейнера каруселі */
+.max-w-5xl {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Стилі для відгуків */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slide .p-4 {
+  margin: 0 10px;
+}
+
+/* Картка відгуку */
+.slick-slide .border {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Зображення аватара відгуку */
+.slick-slide img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Ім'я та локація користувача */
+.slick-slide .text-lg {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.slick-slide .text-gray-500 {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Рейтинг */
+.slick-slide .text-yellow-500 {
+  color: #FFD700;
+  font-size: 1.25rem;
+}
+
+/* Опис відгуку */
+.slick-slide .mt-3 {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Стилі для стрілок */
+.slick-prev, .slick-next {
+  font-size: 30px;
+  color: #333;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Стилі для точки навігації */
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li button {
+  font-size: 12px;
+  color: #333;
+  background: transparent;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+}
+
+.slick-dots li.slick-active button {
+  background: #FFD700;
+}

@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Home.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Home() {
   const [selectedPlan, setSelectedPlan] = useState("Premium Plan");
@@ -38,6 +41,67 @@ function Home() {
       ],
     },
   ];
+
+  const reviews = [
+    {
+      name: "Viezh Robert",
+      location: "Warsaw, Poland",
+      rating: 4.5,
+      review: "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best.",
+      avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+    },
+    {
+      name: "Yessica Christy",
+      location: "Shanxi, China",
+      rating: 4.5,
+      review: "I like it because I like to travel far and still can connect with high speed.",
+      avatar: "https://randomuser.me/api/portraits/women/2.jpg",
+    },
+    {
+      name: "Kim Young Jou",
+      location: "Seoul, South Korea",
+      rating: 4.5,
+      review: "This is very unusual for my business that currently requires a virtual private network that has high security.",
+      avatar: "https://randomuser.me/api/portraits/men/3.jpg",
+    },
+  ];
+
+  const TestimonialCarousel = () => {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 2, // Показує 2 відгуки одночасно
+      slidesToScroll: 1,
+      arrows: true,
+      responsive: [
+        { breakpoint: 1024, settings: { slidesToShow: 2 } },
+        { breakpoint: 768, settings: { slidesToShow: 1 } },
+      ],
+    };
+
+    return (
+      <div className="max-w-5xl mx-auto py-10">
+        <Slider {...settings}>
+          {reviews.map((review, index) => (
+            <div key={index} className="p-4">
+              <div className="border rounded-xl p-5 shadow-md bg-white text-center">
+                <img
+                  src={review.avatar}
+                  alt={review.name}
+                  className="w-16 h-16 rounded-full mx-auto mb-4"
+                />
+                <h3 className="text-lg font-semibold">{review.name}</h3>
+                <p className="text-gray-500">{review.location}</p>
+                <p className="text-yellow-500 text-xl">⭐ {review.rating}</p>
+                <p className="mt-3 text-gray-700">{review.review}</p>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    );
+  };
 
   return (
     <main className="home-container">
@@ -107,22 +171,28 @@ function Home() {
           </div>
         ))}
       </div>
+
       <section className='vpn-section'>
         <h2>Huge Global Network of Fast VPN</h2>
         <p>See LaslesVPN everywhere to make it easier for you when you move locations.</p>
         <img src="/global.png" alt="glob" className="globalimage" />
       </section>
-      <div class="brand-logos">
-        <img src="/netflix.png" alt="Netflix" class="logobr" />
-        <img src="/reddit.png" alt="Reddit" class="logobr" />
-        <img src="/amazon.png" alt="Amazon" class="logobr" />
-        <img src="/discord.png" alt="Discord" class="logobr" />
-        <img src="/spotify.png" alt="Spotify" class="logobr" />
+
+      <div className="brand-logos">
+        <img src="/netflix.png" alt="Netflix" className="logobr" />
+        <img src="/reddit.png" alt="Reddit" className="logobr" />
+        <img src="/amazon.png" alt="Amazon" className="logobr" />
+        <img src="/discord.png" alt="Discord" className="logobr" />
+        <img src="/spotify.png" alt="Spotify" className="logobr" />
       </div>
+
       <div className='customer'>
         <h2>Trusted by Thousands of Happy Customer</h2>
         <p>These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
       </div>
+
+      {/* Використовуємо компонент TestimonialCarousel */}
+      <TestimonialCarousel />
     </main>
   );
 }
