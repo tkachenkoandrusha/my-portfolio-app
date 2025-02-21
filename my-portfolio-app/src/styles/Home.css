@@ -333,7 +333,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 20px;
+  padding: 50px 50px;
 }
 
 .vpn-section h2 {
@@ -392,4 +392,31 @@ h2 {
   .logobr {
     max-width: 50%;
   }
+}
+
+.customer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 60vh;
+  max-width: 600px; /* Обмеження ширини */
+  margin: 0 auto;
+}
+
+.customer h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 36px; /* Зменшений розмір */
+  margin-bottom: 20px;
+  font-weight: 600;
+  max-width: 400px
+}
+
+.customer p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px; /* Зменшений розмір */
+  color: #666;
+  max-width: 800px; /* Обмеження ширини для кращого вигляду */
+  margin-bottom: 80px;
 }
