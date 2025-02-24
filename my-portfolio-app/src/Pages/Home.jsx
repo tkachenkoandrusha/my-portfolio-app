@@ -76,7 +76,7 @@ function Home() {
       arrows: true,
       responsive: [
         { breakpoint: 1024, settings: { slidesToShow: 2 } },
-        { breakpoint: 768, settings: { slidesToShow: 1 } },
+        { breakpoint: 768, settings: { slidesToShow: 1 },slidesToScroll: 1},
       ],
     };
 
@@ -190,9 +190,16 @@ function Home() {
         <h2>Trusted by Thousands of Happy Customer</h2>
         <p>These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
       </div>
-
-      {/* Використовуємо компонент TestimonialCarousel */}
       <TestimonialCarousel />
+      <div class="subscribe">
+        <div class="text-container-1">
+          <h2>Subscribe Now for Get Special Features!</h2>
+          <p>Let's subscribe with us and find the fun.</p>
+        </div>
+        <div class="button-container">
+          <button class="subscribe-p">Subscribe Now</button>
+        </div>
+      </div>
     </main>
   );
 }
