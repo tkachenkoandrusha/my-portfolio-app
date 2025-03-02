@@ -599,7 +599,7 @@ h2 {
   font-size: 15px;
   font-weight: bold;
   border: none;
-  padding: 20px 30px;
+  padding: 20px 50px;
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 5px 10px rgba(255, 61, 61, 0.3);
@@ -608,7 +608,7 @@ h2 {
 
 .subscribe-p:hover {
   background: #e60000;
-  box-shadow: 0 7px 15px rgba(255, 61, 61, 0.5);
+  box-shadow: 0 7px 20px rgba(255, 61, 61, 0.5);
 }
 /* Екрани < 1024px (планшети) */
 @media (max-width: 1024px) {
