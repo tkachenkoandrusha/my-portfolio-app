@@ -1,13 +1,13 @@
-/* Основна стилізація для компонента Home */
+
 .home-container {
   display: flex;
-  flex-direction: column; /* Встановлюємо вертикальне розташування для контейнера */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   padding: 100px;
 }
 
-/* Контейнер для тексту та зображення */
+
 .content {
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,7 @@
   margin-top: 1px;
 }
 
-/* Текстова частина */
+
 .text-container {
   max-width: 50%;
   display: flex;
@@ -60,13 +60,13 @@ h2 {
   background-color: #D02A2A;
 }
 
-/* Зображення */
+
 .image-first-page {
   max-width: 45%;
   height: auto;
 }
 
-/* Стилізація статистики */
+
 .stats {
   display: flex;
   justify-content: center;
@@ -99,23 +99,23 @@ h2 {
   height: 50px;
 }
 
-/* Вертикальні роздільники */
+
 .divider {
   width: 1px;
   height: 100px;
   background-color: #e2e1e1;
 }
 
-/* Адаптивність */
+
 @media (max-width: 768px) {
   .content {
-    flex-direction: column; /* Мобільний вигляд з колонкою */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
   }
 
   .text-container {
-    max-width: 100%; /* Дозволяємо тексту займати всю ширину */
+    max-width: 100%; 
   }
 
   .image-first-page {
@@ -124,7 +124,7 @@ h2 {
   }
 
   .stats {
-    flex-direction: column; /* Статистика йде вертикально */
+    flex-direction: column; 
     gap: 20px;
     align-items: center;
   }
@@ -135,7 +135,7 @@ h2 {
   }
 }
 
-/* Стилізація для features-container */
+
 .features-container {
   padding: 50px;
   display: flex;
@@ -143,7 +143,7 @@ h2 {
   align-items: center;
   width: 100%;
   margin-top: 1px;
-  flex-wrap: wrap; /* Дозволяє елементам переноситись на новий рядок, якщо необхідно */
+  flex-wrap: wrap; 
 }
 
 .features-image {
@@ -177,7 +177,7 @@ h2 {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column; /* Список йде стовпцем */
+  flex-direction: column; 
 }
 
 .features-list li {
@@ -187,16 +187,16 @@ h2 {
   color: #666666;
   margin-bottom: 25px;
   position: relative;
-  padding-left: 45px; /* Відступ для маркера */
+  padding-left: 45px; 
 }
 
-/* Кастомний маркер у вигляді зеленого кола з галочкою */
+
 .features-list li::before {
-  content: "✔"; /* Галочка */
+  content: "✔"; 
   font-size: 12px;
   color: white;
-  background-color: #4CAF50; /* Зелений фон */
-  border-radius: 50%; /* Робимо його круглим */
+  background-color: #4CAF50; 
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,15 +206,15 @@ h2 {
   left: 0;
 }
 
-/* Стилізація для text-container-prise */
+
 .text-container-prise {
-  margin-top: 10px; /* Відстань від попереднього контенту */
+  margin-top: 10px;
   padding: 0%;
   text-align: center;
   display: block;
-  width: 50%; /* Ширина контейнера (можна змінити відповідно до вашого дизайну) */
-  margin: 90px auto 0; /* Центрування контейнера і збільшення відступу зверху */
-  box-sizing: border-box; /* Щоб padding не впливав на загальну ширину */
+  width: 50%; 
+  margin: 90px auto 0; 
+  box-sizing: border-box; 
 }
 
 .text-container-prise h2{
@@ -228,10 +228,10 @@ h2 {
   font-size: 18px; 
   color: #666666;
 }
-/* Адаптивність */
+
 @media (max-width: 768px) {
   .features-container {
-    flex-direction: column; /* На маленьких екранах елементи йдуть один під одним */
+    flex-direction: column; 
     text-align: center;
   }
 
@@ -293,12 +293,12 @@ h2 {
 }
 .pricing-card ul li {
   display: flex;
-  align-items: center; /* Вирівнювання по вертикалі по центру */
-  justify-content: flex-start; /* Вирівнювання по лівому краю */
+  align-items: center; 
+  justify-content: flex-start; 
   font-size: 14px;
   color: #333;
   margin-bottom: 1px;
-  padding-left: 20px; /* Відступ між індикатором і текстом */
+  padding-left: 20px;
 }
 
 .price {
@@ -358,20 +358,20 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Дозволяє логотипам переноситися на новий рядок */
-  gap: 5vw; /* Використання відсотків для гнучкого відступу */
+  flex-wrap: wrap; 
+  gap: 5vw; 
   margin-top: 5vh;
 }
 
 .logobr {
-  max-width: 12vw; /* Використовуємо відсотки, щоб підлаштовуватись під розмір екрану */
+  max-width: 12vw; 
   height: auto;
 }
 
-/* Медізапити для дрібніших екранів */
+
 @media (max-width: 1024px) {
   .logobr {
-    max-width: 20vw; /* Трохи більші логотипи на менших екранах */
+    max-width: 20vw;
   }
 }
 
@@ -386,7 +386,7 @@ h2 {
 
 @media (max-width: 480px) {
   .brand-logos {
-    flex-direction: column; /* В стовпчик для мобільних */
+    flex-direction: column; 
     gap: 20px;
   }
   .logobr {
@@ -401,13 +401,13 @@ h2 {
   justify-content: center;
   text-align: center;
   height: 60vh;
-  max-width: 600px; /* Обмеження ширини */
+  max-width: 600px; 
   margin: 0 auto;
 }
 
 .customer h2 {
   font-family: 'Rubik', sans-serif;
-  font-size: 36px; /* Зменшений розмір */
+  font-size: 36px;
   margin-bottom: 20px;
   font-weight: 600;
   max-width: 400px
@@ -415,13 +415,13 @@ h2 {
 
 .customer p {
   font-family: 'Rubik', sans-serif;
-  font-size: 14px; /* Зменшений розмір */
+  font-size: 14px; 
   color: #666;
-  max-width: 800px; /* Обмеження ширини для кращого вигляду */
+  max-width: 800px;
   margin-bottom: 80px;
 }
 
-/* Основні стилі для контейнера каруселі */
+
 .max-w-5xl {
   max-width: 1100px;
   margin:  auto;
@@ -433,7 +433,6 @@ h2 {
   padding-bottom: 0px;
 }
 
-/* Стилі для відгуків */
 .slick-slide {
   display: flex;
   justify-content: center;
@@ -453,8 +452,8 @@ h2 {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  width: 100%; /* Залишаємо ширину 100% */
-  height: 100%; /* Встановлюємо висоту на 100% */
+  width: 100%; 
+  height: 100%; 
   box-sizing: border-box;
 }
 
@@ -463,7 +462,7 @@ h2 {
   transform: translateY(-1px);
 }
 
-/* Зображення аватара відгуку */
+
 .slick-slide img {
   border-radius: 45%;
   width: 60px;
@@ -473,7 +472,7 @@ h2 {
   border: 3px solid #dd1630;
 }
 
-/* Ім'я та локація користувача */
+
 .slick-slide .text-lg {
   font-size: 1rem;
   font-weight: bold;
@@ -486,13 +485,13 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Рейтинг */
+
 .slick-slide .text-yellow-500 {
   color: #FFD700;
   font-size: 1rem;
 }
 
-/* Опис відгуку */
+
 .slick-slide .mt-3 {
   font-size: 1rem;
   color: #333;
@@ -500,7 +499,7 @@ h2 {
   margin-top: 10px;
 }
 
-/* Стилі для стрілок */
+
 .slick-prev, .slick-next {
   left: -20px; 
   font-size: 40px;
@@ -515,7 +514,6 @@ h2 {
   background: rgba(255, 255, 255, 1);
 }
 
-/* Стилі для точок навігації */
 .slick-dots {
   bottom: -4px;
 }
@@ -534,11 +532,11 @@ h2 {
   background: #FFD700;
 }
 
-/* Адаптивність для мобільних пристроїв */
+
 @media (max-width: 768px) {
   .slick-slide .border {
-    padding: 15px; /* Менше відступів на маленьких екранах */
-    height: auto; /* Автоматична висота для мобільних пристроїв */
+    padding: 15px;
+    height: auto; 
   }
 
   .slick-slide img {
@@ -548,7 +546,7 @@ h2 {
   }
 
   .slick-prev, .slick-next {
-    font-size: 30px; /* Зменшити розмір стрілок на мобільних */
+    font-size: 30px; 
   }
 }
 .subscribe {
@@ -610,7 +608,7 @@ h2 {
   background: #e60000;
   box-shadow: 0 7px 20px rgba(255, 61, 61, 0.5);
 }
-/* Екрани < 1024px (планшети) */
+
 @media (max-width: 1024px) {
   .subscribe {
     flex-direction: column;
@@ -631,7 +629,7 @@ h2 {
   }
 }
 
-/* Екрани < 768px (телефони) */
+
 @media (max-width: 768px) {
   .subscribe {
     padding: 30px 20px;

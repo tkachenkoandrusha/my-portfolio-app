@@ -1,113 +1,109 @@
-/* Загальний стиль для хедера */
+
 header {
-    font-family: 'Rubik', sans-serif; /* Встановлюємо шрифт Rubik */
-    background-color: #fff; /* Білий фон */
-    padding: 15px 65px; /* Внутрішні відступи */
-    display: flex; /* Включаємо гнучке вирівнювання (flexbox) */
-    align-items: center; /* Вирівнюємо елементи по центру вертикально */
-    justify-content: space-between; /* Розташовуємо контент по краях (логотип ліворуч, меню по центру, кнопки праворуч) */
+    font-family: 'Rubik', sans-serif; 
+    background-color: #fff; 
+    padding: 15px 65px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
 }
 
-/* Стиль для заголовка (логотипу) */
+
 h1 {
-    font-size: 24px; /* Розмір тексту */
-    color: #333; /* Темно-сірий колір */
-    font-weight: normal; /* Зробити звичайний текст (НЕ жирний) */
+    font-size: 24px; 
+    color: #333; 
+    font-weight: normal; 
 }
 
-/* Клас для жирного тексту */
+
 .bold {
-    font-weight: 700; /* Робимо тільки "VPN" жирним */
+    font-weight: 700; 
 }
 
-/* Контейнер для навігаційного меню */
+
 nav {
-    flex: 1; /* Дозволяє займати всю доступну ширину між логотипом і кнопками */
-    display: flex; /* Використовуємо flexbox */
-    justify-content: center; /* Центруємо меню */
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
 }
 
-/* Стиль для списку навігації */
+
 nav ul {
-    list-style: none; /* Видаляємо маркери списку */
-    display: flex; /* Розміщуємо пункти горизонтально */
-    gap: 25px; /* Відстань між пунктами */
-    padding: 0; /* Видаляємо внутрішні відступи */
+    list-style: none; 
+    display: flex; 
+    gap: 25px; 
+    padding: 0; 
 }
 
-/* Стиль для посилань у меню */
+
 nav ul li a {
-    text-decoration: none; /* Видаляємо підкреслення */
-    color: #555; /* Сірий колір тексту */
-    transition: color 0.3s ease; /* Плавна зміна кольору при наведенні */
+    text-decoration: none; 
+    color: #555; 
+    transition: color 0.3s ease; 
 }
 
-/* Зміна кольору при наведенні */
+
 nav ul li a:hover {
-    color: #ff4500; /* Колір помаранчевий */
+    color: #ff4500; 
 }
 
-/* Контейнер для логотипу та назви */
 .logo-container {
     display: flex;
-    align-items: center; /* Вирівнюємо логотип і текст по центру */
-    gap: 10px; /* Відступ між логотипом і текстом */
+    align-items: center; 
+    gap: 10px; 
 }
 
-/* Стиль для логотипу */
+
 .logo {
-    width: 40px; /* Розмір логотипу (змінюйте за потреби) */
-    height: auto; /* Автоматичне коригування висоти */
+    width: 40px; 
+    height: auto; 
 }
 
 .auth-links {
     display: flex;
-    align-items: center; /* Вирівнюємо кнопки по центру */
-    gap: 20px; /* Відстань між кнопками */
+    align-items: center; 
+    gap: 20px; 
 }
-/* Стилізація "Sign In" */
+
 .sign-in {
-    font-family: 'Rubik', sans-serif; /* Встановлюємо шрифт Rubik */
-    font-size: 16px; /* Розмір шрифту */
-    font-weight: 700; /* Робимо текст жирним */
-    color: #141414; /* Чорний колір */
-    background: none; /* Без заливки фону */
-    border: none; /* Без обводки */
-    text-decoration: none; /* Видаляємо підкреслення */
-    display: inline-block; /* Дозволяє застосовувати margin та padding */
-    cursor: pointer; /* Змінюємо курсор на "вказівник" */
+    font-family: 'Rubik', sans-serif; 
+    font-size: 16px;
+    font-weight: 700; 
+    color: #141414; 
+    background: none; 
+    border: none; 
+    text-decoration: none; 
+    display: inline-block; 
+    cursor: pointer; 
 }
 
 
 
 
 
-/* Стилізація кнопки "Sign Up" */
 .sign-up-btn {
-    font-family: 'Rubik', sans-serif; /* Встановлюємо шрифт Rubik */
-    font-size: 16px; /* Розмір шрифту */
-    font-weight: 600; /* Напівжирний текст */
-    color: #F53838; /* Червоний текст */
-    background-color: transparent; /* Прозорий фон */
-    border: 2px solid #F53838; /* Червона рамка */
-    padding: 8px 28px; /* Внутрішній відступ (збільшує кнопку) */
-    border-radius: 25px; /* Заокруглені краї */
-    text-decoration: none; /* Видаляємо підкреслення */
-    transition: all 0.3s ease; /* Плавні зміни при наведенні */
+    font-family: 'Rubik', sans-serif; 
+    font-size: 16px;
+    font-weight: 600; 
+    color: #F53838; 
+    background-color: transparent; 
+    border: 2px solid #F53838; 
+    padding: 8px 28px;
+    border-radius: 25px; 
+    text-decoration: none; 
+    transition: all 0.3s ease; 
 }
 
-/* Ефект при наведенні */
 .sign-up-btn:hover {
-    background-color: #F53838; /* Фон стає червоним */
-    color: white; /* Текст стає білим */
+    background-color: #F53838; 
+    color: white; 
 }
 
-/* Ефект при натисканні */
 .sign-up-btn:active {
-    transform: scale(0.95); /* Легке зменшення кнопки при натисканні */
+    transform: scale(0.95); 
 }
 
-/* Стиль для кнопки меню (гамбургер) */
+
 .menu-toggle {
     display: none;
     font-size: 28px;
@@ -117,14 +113,14 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Адаптивне меню */
+
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Показуємо кнопку на мобільних */
+        display: block; 
     }
 
     .nav-menu {
-        display: none; /* Ховаємо меню за замовчуванням */
+        display: none; 
         flex-direction: column;
         align-items: center;
         background-color: white;
@@ -142,7 +138,7 @@ nav ul li a:hover {
     }
 
     .nav-menu.show {
-        display: flex; /* Показуємо меню при активному стані */
+        display: flex; 
     }
 
     .auth-links {
